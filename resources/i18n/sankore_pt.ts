@@ -2821,6 +2821,10 @@ Quer ignorar estes erros, deste servidor?</translation>
         <translation>Hindi</translation>
     </message>
     <message>
+        <source>Brazilian Portuguese</source>
+        <translation>Português do Brasil</translation>
+    </message>
+    <message>
         <source>Portuguese</source>
         <translation>Português</translation>
     </message>

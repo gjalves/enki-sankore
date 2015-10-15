@@ -26,9 +26,9 @@ initializeVariables()
   STANDARD_QT_USED=false
 
   PRODUCT_PATH="build/linux/release/product"
-  QT_PATH="/usr/local/Trolltech/Qt-4.8.0"
+  QT_PATH="/usr/local/Trolltech/Qt-4.8.7"
   PLUGINS_PATH="$QT_PATH/plugins"
-  GUI_TRANSLATIONS_DIRECTORY_PATH="../Qt-4.8/translations"
+  GUI_TRANSLATIONS_DIRECTORY_PATH="$QT_PATH/translations"
   QT_LIBRARY_DEST_PATH="$PRODUCT_PATH/qtlib"
   QT_LIBRARY_SOURCE_PATH="$QT_PATH/lib"
   ARCHITECTURE=`uname -m`
@@ -83,7 +83,7 @@ checkDir(){
 }
 
 checkExecutable(){
-    if [ ! -e "$1" ]; then
+    if [ ! -e "$2" ]; then
         notifyError "$1 command not found"
     fi
 }
@@ -141,9 +141,9 @@ checkDir $QT_PATH
 checkDir $PLUGINS_PATH
 checkDir $GUI_TRANSLATIONS_DIRECTORY_PATH
 
-checkExecutable $QMAKE_PATH
-checkExecutable $LRELEASES
-checkExecutable $ZIP_PATH
+checkExecutable "qmake" $QMAKE_PATH
+checkExecutable "lreleases" $LRELEASES
+checkExecutable "zip" $ZIP_PATH
 
 # cleaning the build directory
 rm -rf "build/linux/release"

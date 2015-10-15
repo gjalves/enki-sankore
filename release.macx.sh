@@ -15,7 +15,7 @@
 # ---------------------------------------------------------------------
 
 
-BASE_TROLLTECH_DIRECTORY=/usr/local/Trolltech/Qt-4.8.0
+BASE_TROLLTECH_DIRECTORY=/usr/local/Trolltech/Qt-4.8.7
 # Executables
 QMAKE=$BASE_TROLLTECH_DIRECTORY/bin/qmake
 MACDEPLOYQT=$BASE_TROLLTECH_DIRECTORY/bin/macdeployqt
