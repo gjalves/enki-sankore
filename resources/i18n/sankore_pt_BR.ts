@@ -755,27 +755,27 @@
     </message>
     <message utf8="true">
         <source>Open-Sankoré</source>
-        <translation>Open-Sankoré</translation>
+        <translation>Enki</translation>
     </message>
     <message utf8="true">
         <source>Quit Open-Sankoré</source>
-        <translation>Sair do Open-Sankoré</translation>
+        <translation>Sair do Enki</translation>
     </message>
     <message utf8="true">
         <source>Open-Sankoré Editor</source>
-        <translation>Editor Open-Sankoré</translation>
+        <translation>Editor Enki</translation>
     </message>
     <message utf8="true">
         <source>Show Open-Sankoré Widgets Editor</source>
-        <translation>Mostrar o Editor de Widgets do Open-Sankoré</translation>
+        <translation>Mostrar o Editor de Widgets do Enki</translation>
     </message>
     <message utf8="true">
         <source>Hide Open-Sankoré</source>
-        <translation>Ocultar o Open-Sankoré</translation>
+        <translation>Ocultar o Enki</translation>
     </message>
     <message utf8="true">
         <source>Hide Open-Sankoré Application</source>
-        <translation>Ocultar a Aplicação Open-Sankoré</translation>
+        <translation>Ocultar a Aplicação Enki</translation>
     </message>
     <message>
         <source>Group items</source>
@@ -1519,7 +1519,7 @@
     </message>
     <message>
         <source>Show Open-Sankore</source>
-        <translation>Mostrar Open-Sankore</translation>
+        <translation>Mostrar Enki</translation>
     </message>
 </context>
 <context>
@@ -1590,7 +1590,7 @@
     </message>
     <message>
         <source>The document &apos;%1&apos; has been generated with a newer version of Sankore (%2). By opening it, you may lose some information. Do you want to proceed?</source>
-        <translation>O documento &apos;%1&apos; foi criado com uma versão mais recente do Sankoré (%2). Ao abri-lo, você poderá perder alguma da informação contida nele. Deseja continuar?</translation>
+        <translation>O documento &apos;%1&apos; foi criado com uma versão mais recente do Enki (%2). Ao abri-lo, você poderá perder alguma da informação contida nele. Deseja continuar?</translation>
     </message>
     <message>
         <source>Add all Images to Document</source>
@@ -1715,7 +1715,7 @@
     </message>
     <message>
         <source>Uploading Sankore File on Web.</source>
-        <translation>Enviando o arquivo Sankoré para a Web.</translation>
+        <translation>Enviando o arquivo Enki para a Web.</translation>
     </message>
     <message>
         <source>Export failed.</source>
@@ -1973,7 +1973,7 @@ Um novo nome vai criar um novo documento.</translation>
     </message>
     <message>
         <source>Export to Sankore Format</source>
-        <translation>Exportar para o Formato Sankoré</translation>
+        <translation>Exportar para o Formato Enki</translation>
     </message>
 </context>
 <context>
@@ -2000,7 +2000,7 @@ Um novo nome vai criar um novo documento.</translation>
     </message>
     <message>
         <source>Export to Sankore UBX Format</source>
-        <translation>Exportar para o Formato Sankore UBX</translation>
+        <translation>Exportar para o Formato Enki UBX</translation>
     </message>
 </context>
 <context>
@@ -2468,14 +2468,14 @@ Um novo nome vai criar um novo documento.</translation>
     </message>
     <message>
         <source>Open-Sankore (*.ubz)</source>
-        <translation>Open-Sankore (*.ubz)</translation>
+        <translation>Enki (*.ubz)</translation>
     </message>
 </context>
 <context>
     <name>UBImportDocumentSetAdaptor</name>
     <message>
         <source>Open-Sankore (set of documents) (*.ubx)</source>
-        <translation>Open-Sankoré (conjunto de documentos) (*.ubx)</translation>
+        <translation>Enki (conjunto de documentos) (*.ubx)</translation>
     </message>
 </context>
 <context>
@@ -2594,7 +2594,7 @@ Quer ignorar estes erros deste servidor?</translation>
     </message>
     <message>
         <source>Sankore has lost access to the document repository &apos;%1&apos;. Unfortunately the application must shut down to avoid data corruption. Latest changes may be lost as well.</source>
-        <translation>O Sanskoré perdeu o acesso ao repositório do documento &apos;%1&apos;. Infelizmente, o aplicativo vai ser encerrado para evitar a corrupção de dados. Também poderá perder as últimas alterações.</translation>
+        <translation>O Enki perdeu o acesso ao repositório do documento &apos;%1&apos;. Infelizmente, o aplicativo vai ser encerrado para evitar a corrupção de dados. Também poderá perder as últimas alterações.</translation>
     </message>
 </context>
 <context>
@@ -2624,7 +2624,7 @@ Quer ignorar estes erros deste servidor?</translation>
     <name>UBPodcastController</name>
     <message>
         <source>Sankore Cast</source>
-        <translation>Sankore Cast</translation>
+        <translation>Enki Cast</translation>
     </message>
     <message>
         <source>Failed to start encoder ...</source>
@@ -3258,7 +3258,7 @@ Por favor, reinicie o aplicativo para acessar os documentos atualizados.</transl
     <name>UBWebPublisher</name>
     <message>
         <source>Publish Document on Sankore Web</source>
-        <translation>Publicar o documento no Sankoré Web</translation>
+        <translation>Publicar o documento no Enki Web</translation>
     </message>
 </context>
 <context>
@@ -3273,7 +3273,7 @@ Por favor, reinicie o aplicativo para acessar os documentos atualizados.</transl
     </message>
     <message>
         <source>Impossible to connect to Planete Sankore: %1</source>
-        <translation>Não pode conectar ao Planete Sankore: %1</translation>
+        <translation>Não pode conectar ao Planeta Enki: %1</translation>
     </message>
 </context>
 <context>
@@ -3292,11 +3292,11 @@ Por favor, reinicie o aplicativo para acessar os documentos atualizados.</transl
     </message>
     <message>
         <source>Open-Sankore</source>
-        <translation>Open-Sankore</translation>
+        <translation>Enki</translation>
     </message>
     <message>
         <source>OpenSankore</source>
-        <translation>OpenSankore</translation>
+        <translation>Enki</translation>
     </message>
 </context>
 <context>
@@ -3599,7 +3599,7 @@ página atual</translation>
     <name>WBWebPage</name>
     <message>
         <source>Download PDF Document: would you prefer to download the PDF file or add it to the current Sankore document?</source>
-        <translation>Descarregar o documento PDF: Prefere descarregar o arquivo PDF ou adicioná-lo ao arquivo Sankoré atual?</translation>
+        <translation>Descarregar o documento PDF: Prefere descarregar o arquivo PDF ou adicioná-lo ao arquivo Enki atual?</translation>
     </message>
     <message>
         <source>Download</source>
@@ -3958,7 +3958,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message utf8="true">
         <source>Open-Sankoré</source>
-        <translation>Open-Sankoré</translation>
+        <translation>Enki</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -3966,7 +3966,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message utf8="true">
         <source>Planète Sankoré ID for exporting file</source>
-        <translation>Planète Sankoré ID para exportar arquivo</translation>
+        <translation>Planeta Enki ID para exportar arquivo</translation>
     </message>
     <message>
         <source>Restore credentials on reboot  </source>
@@ -3994,7 +3994,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message utf8="true">
         <source>Close Open-Sankoré</source>
-        <translation>Fechar Open-Sankoré</translation>
+        <translation>Fechar Enki</translation>
     </message>
     <message>
         <source>OpenSSL</source>
