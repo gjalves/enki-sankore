@@ -1,0 +1,5 @@
+*.wixobj
+*.wixpdb
+*.msi
+i18n.wxs
+startupHints.wxs
