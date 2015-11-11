@@ -1,6 +1,6 @@
 GITSHA1=$(shell git rev-parse HEAD)
 
-MSI=enki-${GITSHA1}.msi
+MSI=enki-w32-${GITSHA1}.msi
 
 ${MSI}: enki.wixobj startupHints.wixobj i18n.wixobj
 	light -sice:ICE60 -o ${MSI} $^
@@ -25,5 +25,5 @@ startupHints.wixobj: startupHints.wxs
 clean:
 	rm -f enki.wixobj ${MSI} startupHints.wxs i18n.wxs *.wixpdb *.wixobj
 
-deploy:
-	echo ${MSI}
+deploy: ${MSI}
+	scp ${MSI} devel@192.168.200.252:deploy/enki/
