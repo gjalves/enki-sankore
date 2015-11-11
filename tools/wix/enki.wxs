@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Product Id="*" UpgradeCode="d785140f-15c3-4c71-be8f-6963d5ceb78c" 
+            Name="Enki" Version="0.0.1" Manufacturer="HPrint Solucoes" Language="1033">
+        <Package InstallerVersion="200" Compressed="yes" Comments="Windows Installer Package"/>
+        <Media Id="1" Cabinet="enki.cab" EmbedCab="yes"/>
+ 
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+                <Directory Id="APPLICATIONROOTDIRECTORY" Name="Enki"/>
+            </Directory>
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="ApplicationProgramsFolder" Name="Enki"/>
+            </Directory>
+        </Directory>
+
+        <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+            <Component Id="Enki" Guid="579b74ee-21de-45db-91ac-78e03f2c67ec">
+                <File Id="OpenSankore.exe" Source="..\..\build\win32\release\product\Open-Sankore.exe" KeyPath="yes" Checksum="yes"/>
+            </Component>
+            <Component Id="Qt4" Guid="19442a61-85a3-467a-8925-7403a73caac5">
+                <File Id="QtCore4.dll" Source="..\..\build\win32\release\product\QtCore4.dll" KeyPath="yes" Checksum="yes"/>
+                <File Id="QtGui4.dll" Source="..\..\build\win32\release\product\QtGui4.dll" KeyPath="no" Checksum="yes"/>
+                <File Id="QtNetwork4.dll" Source="..\..\build\win32\release\product\QtNetwork4.dll" KeyPath="no" Checksum="yes"/>
+                <File Id="QtScript4.dll" Source="..\..\build\win32\release\product\QtScript4.dll" KeyPath="no" Checksum="yes"/>
+                <File Id="QtSvg4.dll" Source="..\..\build\win32\release\product\QtSvg4.dll" KeyPath="no" Checksum="yes"/>
+                <File Id="QtWebKit4.dll" Source="..\..\build\win32\release\product\QtWebKit4.dll" KeyPath="no" Checksum="yes"/>
+                <File Id="QtXml4.dll" Source="..\..\build\win32\release\product\QtXml4.dll" KeyPath="no" Checksum="yes"/>
+                <File Id="phonon4.dll" Source="..\..\build\win32\release\product\phonon4.dll" KeyPath="no" Checksum="yes"/>
+            </Component>
+        </DirectoryRef>
+
+        <DirectoryRef Id="ApplicationProgramsFolder">
+            <Component Id="ApplicationShortcut" Guid="af192c40-06df-4c8a-8128-71eef9165e5b">
+                <Shortcut Id="Enki-Start-Menu-Shortcut" Name="Enki" Description="Lousa Digital Enki" Target="[!OpenSankore.exe]" WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+                <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+                <RegistryValue Root="HKCU" Key="Software\Microsoft\Enki" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+
+        <Feature Id="Enki" Level="1">
+            <ComponentRef Id="Enki"/>
+            <ComponentRef Id="ApplicationShortcut"/>
+            <ComponentRef Id="Qt4"/>
+            <ComponentGroupRef Id="startupHints"/>
+            <ComponentGroupRef Id="i18n"/>
+        </Feature>
+    </Product>
+</Wix>
